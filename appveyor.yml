@@ -8,8 +8,125 @@ environment:
     PACMAN_REPOSITORY_NAME: ci.mingw
     BUILD_URL: https://ci.appveyor.com/project/$(APPVEYOR_ACCOUNT_NAME)/$(APPVEYOR_PROJECT_NAME)/build/$(APPVEYOR_BUILD_VERSION)
     matrix:
-        - MINGW_INSTALLS: mingw32
-        - MINGW_INSTALLS: mingw64
+        # SUCCESS!
+        #- PKG_TO_BUILD: mingw-w64-alembic
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/23997142/job/xdt2f7unpd6wv7lp
+        #- PKG_TO_BUILD: mingw-w64-arrow
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/23997327/job/7ka8vtgbfalp366q
+        #- PKG_TO_BUILD: mingw-w64-assimp-git
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/build/job/2qmgq7qr891mbybd
+        #- PKG_TO_BUILD: mingw-w64-blender-git
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/23997784/job/55os3pydfhrbaqjl
+        #- PKG_TO_BUILD: mingw-w64-blender
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/23997895/job/rmwrea8ehtdopr2p
+        #- PKG_TO_BUILD: mingw-w64-cegui
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/23998071/job/6f50ql2y8uwm1not
+        # linking fail
+        #- PKG_TO_BUILD: mingw-w64-cereal
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/23998603/job/4mp3knrm19auirp2
+        #- PKG_TO_BUILD: mingw-w64-cgal
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/23999204/job/72lbge4i5roskndx
+        #- PKG_TO_BUILD: mingw-w64-clucene
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24001012/job/9s08f236mrrnirku
+        #- PKG_TO_BUILD: mingw-w64-codelite-git
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24002885/job/tjq4f7ty7sx8pib1
+        #- PKG_TO_BUILD: mingw-w64-collada-dom-svn
+        #  MINGW_INSTALLS: mingw64
+        # SUCCESS!
+        #- PKG_TO_BUILD: mingw-w64-eigen3
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24003043/job/6152nkia5gxtyw76
+        # linking fail
+        #- PKG_TO_BUILD: mingw-w64-field3d
+        #  MINGW_INSTALLS: mingw64
+        # SUCCESS
+        #- PKG_TO_BUILD: mingw-w64-inkscape
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24003828/job/6ecfq6nm7fan9byf
+        #- PKG_TO_BUILD: mingw-w64-innoextract
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24004266/job/nuprinrm79jgmibi
+        #- PKG_TO_BUILD: mingw-w64-jucipp-git
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24004355/job/p0l82n3hev0uersr
+        #- PKG_TO_BUILD: mingw-w64-kactivities-qt5
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24004505/job/3kkg7md2tm7lw86y
+        # linking fail
+        #- PKG_TO_BUILD: mingw-w64-kicad-git
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24005006/job/xq16pvvrckactkvh
+        #- PKG_TO_BUILD: mingw-w64-kicad
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24005275/job/lonsv3je81lhvuq5
+        #- PKG_TO_BUILD: mingw-w64-krita-git
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24005383/job/i1ywu1kbh5vaepgk
+        #- PKG_TO_BUILD: mingw-w64-kwallet-qt5
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24005801/job/ekdn9fhwfn9x4wfk
+        #- PKG_TO_BUILD: mingw-w64-leechcraft-git
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24005838/job/q8nxxa9k0hhbr36a
+        # linking fail
+        #- PKG_TO_BUILD: mingw-w64-libftdi
+        #  MINGW_INSTALLS: mingw64
+        # SUCCESS!
+        #- PKG_TO_BUILD: mingw-w64-libkml
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24009807/job/qj5wxi8osv5xks8a
+        # linking fail
+        #- PKG_TO_BUILD: mingw-w64-librocket-git
+        #  MINGW_INSTALLS: mingw64
+        # FAIL https://ci.appveyor.com/project/josch/mingw-packages/builds/24011221/job/h124a4ywqaoylyev
+        #- PKG_TO_BUILD: mingw-w64-libtorrent-rasterbar
+        #  MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-libvmime-git
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-luabind-git
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-mlpack
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-ogitor-git
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-ogre3d-hg
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-ogre3d
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-opencolorio-git
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-openexr
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-openimageio
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-OpenSceneGraph-git
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-OpenSceneGraph
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-openshadinglanguage-git
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-openshadinglanguage
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-soci
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-thrift
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-vigra
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-vtk
+          MINGW_INSTALLS: mingw64
+        - PKG_TO_BUILD: mingw-w64-yaml-cpp
+          MINGW_INSTALLS: mingw64
 
 matrix:
     fast_finish: true
